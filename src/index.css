@@ -3,9 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -65,4 +65,141 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-name,
+.div-number {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-Add-contact {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-Add-contact:hover {
+  background-color: #0056b3;
+}
+
+/* ------------------------------------------ */
+.contact-div {
+}
+
+.contact-ul {
+}
+.contact-div-li {
+}
+
+.contact-li {
+}
+
+.button-contact {
+}
+
+.contact-div {
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.contact-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-div-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contact-li {
+  margin: 0;
+}
+
+.contact-name {
+  margin-right: 3px;
+  color: lightcoral;
+}
+.contact-number {
+  margin-right: 32px;
+  color: mediumblue;
+}
+
+.button-contact {
+  background-color: #007bff;
+  color: white;
+  border: search none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  background-color: #d32f2f;
+}
+
+/* ---------------------------------- */
+
+.searchbox-container {
+  margin-bottom: 20px;
+}
+
+.searchbox-title {
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  color: #242424;
+}
+
+.searchbox-input {
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.searchbox-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/* --------------------------------- */
+
+.error-message {
+  color: #d32f2f;
+  font-size: medium;
 }
