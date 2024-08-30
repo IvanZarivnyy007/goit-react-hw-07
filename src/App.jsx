@@ -1,18 +1,18 @@
 import ContactForm from './components/ContactForm/ContactForm';
 import SearchBox from './components/SearchBox/SearchBox';
 import ContactList from './components/ContactList/ContactList';
-import { selectContacts } from './redux/contactsSlice';
+import { fetchContacts } from './redux/contactsOps';
 
 import './App.css';
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function App() {
-  const contacts = useSelector(selectContacts);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    window.localStorage.setItem('contacts', JSON.stringify(contacts));
-  }, [contacts]);
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <>
