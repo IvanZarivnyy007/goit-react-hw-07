@@ -35,7 +35,7 @@ const handleRejected = (state, { payload }) => {
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter],
   (contact, filters) => {
-    contact.filter((el) =>
+    return contact.filter((el) =>
       el.name.toLowerCase().includes(filters.toLowerCase())
     );
   }
