@@ -59,7 +59,7 @@ export const contactsSlice = createSlice({
       .addCase(deleteContact.fulfilled, (state, action) => {
         state.loading = false;
         state.error = null;
-        const index = state.items.findIndex((el) => el.id == action);
+        const index = state.items.findIndex((el) => el.id == action.id);
         state.items.splice(index, 1);
       })
       .addCase(fetchContacts.pending, handlePending)
